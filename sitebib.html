@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
 <title>Biblioteca Escolar</title>
 
 <style>
@@ -9,71 +8,79 @@ body {
     font-family: Arial;
     margin: 0;
     background-color: white;
+    text-align: center;
 }
 
-.header {
+header {
     background-color: rgb(53, 94, 231);
     color: white;
-    text-align: center;
     padding: 30px;
 }
 
 .menu {
-    background-color:  rgb(53, 94, 231);;
-    text-align: center;
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(53, 94, 231);
+    padding: 20px;
 }
 
-.menu a {
+.card {
+    background-color: #ff4d4d;
     color: white;
-    margin: 15px;
     text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 15px;
     font-weight: bold;
-    cursor: pointer;
+    transition: 0.3s;
 }
 
-.pagina {
-    display: none;
+.card:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+main {
     padding: 20px;
 }
 
-.ativa {
-    display: block;
-}
-
-.secao {
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.imagens img {
-    width: 30%;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-.rodape {
-    background-color:  rgb(53, 94, 231);
+footer {
+    background-color: rgb(53, 94, 231);
     color: white;
-    text-align: center;
     padding: 15px;
+}
+
+img {
+    width: 25%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 15px;
 }
 </style>
 </head>
-<body> 
+
+<body>
 <center>
-    <div class="header">
-    <h1>Biblioteca do CEEP profª lourdinha guerra</h1>
-    <p>Incentivando a leitura e o conhecimento</p>
-</div>
+<header>
+    <h1>Biblioteca Thalyta Luana CEEP Profª Lourdinha Guerra</h1>
+    <p><strong>Seja bem-vindo à nossa biblioteca!</strong></p>
+    <h4>bibliotecária: Sandra Pimentel</h4>
+</header>
 
 <div class="menu">
-    <a href="index.html">Início</a>
-    <a href="acervo.html">Acervo</a>
-    <a href="horarios.html">Horários</a>
+    <a href="atividades.html" class="card">Atividades</a>
+    <a href="acervo.html" class="card">Acervo</a>
+    <a href="horarios.html" class="card">Horários</a>
 </div>
+<h1>Quem foi Thalytha Luana?</h1>
+<p>A biblioteca do CEEP recebeu esse nome em homenagem a uma aluna do curso de Informática do ano de 2017, reconhecida por ser uma das melhores estudantes da escola.<br>Sua trajetória foi marcada pelo esforço e dedicação aos estudos, tornando-se uma referência para os demais alunos.<br>Infelizmente, a estudante veio a falecer em decorrência de um câncer, e seu nome permanece como forma de homenagem e lembrança de sua história.</p>
+<img src="img/bib.jpg">
+<br><br>
+<br><br>
+<h1>A nossa biblioteca</h1>
+<p>A biblioteca do CEEP foi pensada para os alunos, oferecendo um espaço acolhedor e organizado para a leitura, o estudo e a busca pelo conhecimento.
+Ao longo do tempo, tornou-se um ambiente importante dentro da escola, incentivando o hábito da leitura e contribuindo para o desenvolvimento educacional dos estudantes.</p>
+<img src="img/biblioteca.jpg">
 </center>
 </body>
 </html>

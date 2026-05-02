@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Acervo - Biblioteca Escolar</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: white;
+    text-align: center;
+}
+
+header {
+    background-color: rgb(53, 94, 231);
+    color: white;
+    padding: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(53, 94, 231);
+    padding: 20px;
+}
+
+.card {
+    background-color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(53, 94, 231);
+    color: white;
+    padding: 15px;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: rgb(53, 94, 231);
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.negrito-setor {
+    font-weight: bold;
+    color: rgb(53, 94, 231);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Biblioteca Thalyta Luana CEEP Profª Lourdinha Guerra</h1>
+    <p><strong>Seja bem-vindo à nossa biblioteca!</strong></p>
+    <h4>bibliotecária: Sandra Pimenta</h4>
+</header>
+
+<div class="menu">
+    <a href="atividades.html" class="card">Atividades</a>
+    <a href="sitebib.html" class="card">Início</a>
+    <a href="horarios.html" class="card">Horários</a>
+</div>
+
+<main>
+    <h2>Nosso Acervo</h2>
+
+    <p>
+        Para facilitar a localização dos livros, nosso acervo está organizado em setores por área do conhecimento.
+    </p>
+
+    <table>
+        <tr>
+            <th>Setor</th>
+            <th>Temas</th>
+        </tr>
+
+        <tr>
+            <td><span class="negrito-setor">SETOR 00</span></td>
+            <td>Informática, Periódicos, HQs, Infanto-juvenil</td>
+        </tr>
+
+        <tr>
+            <td><span class="negrito-setor">SETOR 1</span></td>
+            <td>Filosofia, Religião, Psicologia</td>
+        </tr>
+
+        <tr>
+            <td><span class="negrito-setor">SETOR 3</span></td>
+            <td>Ciências sociais</td>
+        </tr>
+
+        <tr>
+            <td><span class="negrito-setor">SETOR 5</span></td>
+            <td>Ciências naturais, Matemática</td>
+        </tr>
+
+        <tr>
+            <td><span class="negrito-setor">SETOR 6</span></td>
+            <td>Literatura potiguar</td>
+        </tr>
+
+        <tr>
+            <td><span class="negrito-setor">SETOR 7</span></td>
+            <td>Artes, Esportes, Recreação</td>
+        </tr>
+
+        <tr>
+            <td><span class="negrito-setor">SETOR 8</span></td>
+            <td>Literaturas diversas internacionais</td>
+        </tr>
+    </table>
+</main>
+</body>
+</html>
