@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário da Biblioteca</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+        }
+
+        .container {
+            width: 400px;
+            margin: 30px auto;
+            background-color: rgb(193, 220, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .grupo {
+            margin-top: 15px;
+        }
+
+        .opcoes {
+            margin-left: 10px;
+        }
+
+        button {
+            width: 48%;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .enviar {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .deletar {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Formulário da Biblioteca</h2>
+
+    <form>
+
+        <label>Email:</label>
+        <input type="email">
+        <label>Nome:</label>
+        <input type="text">
+
+        <div class="grupo">
+            <label>Turma:</label>
+
+            <div class="opcoes">
+                <input type="radio" name="turma"> 1A Info<br>
+                <input type="radio" name="turma"> 1B Info<br>
+                <input type="radio" name="turma"> 1A Redes<br>
+                <input type="radio" name="turma"> 1B Redes<br>
+                <input type="radio" name="turma"> 2A Info<br>
+                <input type="radio" name="turma"> 2B Info<br>
+                <input type="radio" name="turma"> 2A Redes<br>
+                <input type="radio" name="turma"> 2B Redes<br>
+                <input type="radio" name="turma"> 3A Info<br>
+                <input type="radio" name="turma"> 3B Info<br>
+                <input type="radio" name="turma"> 3A Redes<br>
+                <input type="radio" name="turma"> 3B Redes<br>
+            </div>
+        </div>
+            <div class="grupo">
+            <label>Qual dessas obras você mais gosta?</label>
+
+            <div class="opcoes">
+                <input type="checkbox"> Informática<br>
+                <input type="checkbox"> Periódicos<br>
+                <input type="checkbox"> História em quadrinhos<br>
+                <input type="checkbox"> Infanto-juvenil<br>
+                <input type="checkbox"> Filosofia<br>
+                <input type="checkbox"> Religião<br>
+                <input type="checkbox"> Teologia<br>
+                <input type="checkbox"> Psicologia<br>
+                <input type="checkbox"> Ciências sociais<br>
+                <input type="checkbox"> Ciências naturais<br>
+                <input type="checkbox"> Matemática<br>
+                <input type="checkbox"> Literatura potiguar<br>
+                <input type="checkbox"> Artes<br>
+                <input type="checkbox"> Recreação<br>
+                <input type="checkbox"> Diversões<br>
+                <input type="checkbox"> Esporte<br>
+            </div>
+        </div>
+
+        <div class="grupo">
+            <label>Outros:</label>
+            <input type="text">
+        </div>
+
+        <div class="grupo">
+            <label>Caso você tenha alguma duvida que esse site não<br> possa respondê-la, mande aqui:</label>
+            <input type="text">
+        </div>
+        
+        <div class="botoes">
+            <button class="enviar">Enviar</button>
+            <button class="deletar" type="reset">Deletar</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
